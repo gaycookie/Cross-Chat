@@ -2,6 +2,7 @@ package moe.kawaaii.cross_chat;
 
 import moe.kawaaii.cross_chat.events.onDiscordMessage;
 import moe.kawaaii.cross_chat.events.onMinecraftMessage;
+import org.bstats.bukkit.Metrics;
 import org.bukkit.Bukkit;
 import org.bukkit.event.Listener;
 import org.bukkit.plugin.Plugin;
@@ -20,6 +21,7 @@ public class mainClass extends JavaPlugin implements Listener {
     private static File configFile;
     public static DiscordApi discord_api = null;
     public static FileConfiguration config;
+    public static Metrics metrics;
 
     @Override
     public void onEnable() {
@@ -33,6 +35,9 @@ public class mainClass extends JavaPlugin implements Listener {
             getServer().getPluginManager().disablePlugin(this);
             return;
         }
+
+        getLogger().info("Hooking bStats...");
+        metrics = new Metrics(this);
 
         getLogger().info("Loading up Config files...");
         configFile = new File(this.getDataFolder(), "config.yml");
@@ -48,19 +53,19 @@ public class mainClass extends JavaPlugin implements Listener {
             e.printStackTrace();
         }
 
-        if (config.getString("config.discord.token").isEmpty()) {
+        if (config.getString("config.discord.token") == null) {
             getLogger().info("Discord Bot token is not provided, disabling now!");
             getServer().getPluginManager().disablePlugin(this);
             return;
         }
 
-        if (config.getString("config.discord.channels.discord-to-minecraft").isEmpty()) {
+        if (config.getString("config.discord.channels.discord-to-minecraft") == null) {
             getLogger().info("Discord to Minecraft channel is not provided, disabling now!");
             getServer().getPluginManager().disablePlugin(this);
             return;
         }
 
-        if (config.getString("config.discord.channels.minecraft-to-discord").isEmpty()) {
+        if (config.getString("config.discord.channels.minecraft-to-discord") == null) {
             getLogger().info("Minecraft to Discord channel is not provided, disabling now!");
             getServer().getPluginManager().disablePlugin(this);
             return;

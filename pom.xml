@@ -15,6 +15,12 @@
                 <artifactId>maven-shade-plugin</artifactId>
                 <version>3.2.1</version>
                 <configuration>
+                    <relocations>
+                        <relocation>
+                            <pattern>org.bstats</pattern>
+                            <shadedPattern>moe.kawaaii.cross_chat</shadedPattern>
+                        </relocation>
+                    </relocations>
                     <!-- <shadeCompileJar>true</shadeCompileJar> -->
                 </configuration>
                 <executions>
@@ -51,6 +57,10 @@
             <id>placeholderapi</id>
             <url>http://repo.extendedclip.com/content/repositories/placeholderapi/</url>
         </repository>
+        <repository>
+            <id>CodeMC</id>
+            <url>https://repo.codemc.org/repository/maven-public</url>
+        </repository>
     </repositories>
 
     <dependencies>
@@ -81,6 +91,12 @@
             <version>3.4</version>
         </dependency>
 
+        <dependency>
+            <groupId>org.bstats</groupId>
+            <artifactId>bstats-bukkit</artifactId>
+            <version>1.5</version>
+            <scope>compile</scope>
+        </dependency>
     </dependencies>
 
 </project>
