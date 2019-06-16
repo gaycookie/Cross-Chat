@@ -1,0 +1,40 @@
+config:
+  discord:
+
+    # This is an important and secret token, do not share this with ANYONE!
+    # The token can be obtained by creating a bot on the Discord Developers portal.
+    # Visit: https://discordapp.com/developers/applications/ for more information.
+    # This field is required to make the plugin work.
+    token: ""
+
+    # These are the channels for the cross-chat feature, and are also required.
+    # These need to be Discord Channel ID's, you can obtain them by Right Clicking the channel
+    # and click on "Copy ID" (if you do not see this option, make sure to enable: "Developer Mode"
+    # by going to App Settings > Appearance > Advanced and click Developer Mode.
+    channels:
+      discord-to-minecraft: ""
+      minecraft-to-discord: ""
+
+  # Message Formats can be blank, then it will use the default formats
+  # If you wanna change the format, make sure to un-comment the two lines below and make sure
+  # To read all this before continuing.
+
+  ### Built-in Placeholders ###
+  # {username} - This is the username of the Minecraft or Discord user.
+  # {user_id} - This is the ID of the Minecraft or Discord user.
+  # {message} - This is the message sent on Minecraft or Discord.
+
+  ### PlaceholderAPI Placeholders ###
+  # To use PlaceholderAPI placeholders, make sure to read about the placeholders first
+  # https://github.com/PlaceholderAPI/PlaceholderAPI/wiki/Placeholders
+  # Also Cross-Chat plugin uses a bracket system instead of percentage signs, so for example
+  # If you wanna use "%player_level%" you are only able to use "{player_level}".
+  # IMPORTANT: THESE PLACEHOLDERS ARE ONLY FOR MINECRAFT TO DISCORD, NOT THE OTHER WAY!
+
+  ### Examples that can be used ###
+  #  discord: "[**{mcmmo_power_level}**] [**{luckperms_lowest_group_by_weight}**] [**{username}**]: {message}"
+  # this example will output something like this in Discord: "[182] [Owner] [Ashleeeyy]: Test Message"
+
+  message-formats:
+  #  discord: "[**{username}**]: {message}"
+  #  minecraft: "[Discord] &l{username}&r: {message}"
