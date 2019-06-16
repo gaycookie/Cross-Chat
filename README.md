@@ -1,6 +1,7 @@
 # Cross Chat 🦜
 
 [![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/kawaaii/Cross-Chat/blob/master/LICENSE)
+[![Discord](https://img.shields.io/discord/565554961791057942.svg?label=Support%20Discord)](https://)
 [![crosschat-1.0-snapshot](https://img.shields.io/badge/CrossChat-1.0--SNAPSHOT-yellow.svg)](https://github.com/kawaaii/Cross-Chat/)
 [![minecraft-1.14.2-ready](https://img.shields.io/badge/Minecraft-1.14%20ready-brightgreen.svg)](https://www.minecraft.net)
 [![build-against-1.14](https://img.shields.io/badge/Spigot%20Build-1.14.2%20R0.1--SNAPSHOT-brightgreen.svg)](https://www.spigotmc.org/)
