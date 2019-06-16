@@ -46,6 +46,7 @@ As for this, this will come as soon as possible!
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
 
 ## Requested Features
+*If you have features you would like to see in **Cross Chat** you can simply fill in the forms on [this](https://feathub.com/kawaaii/Cross-Chat/features/new) page*
 
 [![Feature Requests](http://feathub.com/kawaaii/Cross-Chat?format=svg)](http://feathub.com/kawaaii/Cross-Chat)
 
