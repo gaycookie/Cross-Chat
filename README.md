@@ -35,6 +35,7 @@ As for this, this will come as soon as possible!
 - [SpigotMC : 1.14.2-R0.1-SNAPSHOT](https://hub.spigotmc.org/nexus/content/repositories/snapshots/)
 - [JavaCord : 3.0.4](https://javacord.org/)
 - [PlaceholderAPI : 2.10.2](https://github.com/PlaceholderAPI/PlaceholderAPI)
+- [bStats : 1.5](https://bstats.org/)
 - [Apache Commons : 3.4](https://commons.apache.org/)
 
 ### Tools:
