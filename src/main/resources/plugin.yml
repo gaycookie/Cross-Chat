@@ -1,0 +1,12 @@
+main: moe.kawaaii.cross_chat.mainClass
+name: Cross-Chat
+version: 1.0-SNAPCHOT
+api-version: 1.14
+author: Kawaaii Programming
+website: https://wwww.kawaaii.moe/
+depend:
+  - PlaceholderAPI
+permissions:
+  cross-chat.allowed:
+    description: This permission allows you to be able to cross-chat, without this your messages will not be delivered to Discord.
+
