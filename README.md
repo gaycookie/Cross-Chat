@@ -8,7 +8,7 @@
 
 **Cross Chat** is a Spigot plugin that will make cross-chatting between Discord and Minecraft servers simple and easy.
 The plugin is written using Java and Maven, and is free and easy to use.
-The plugin is still under development, so a lot of features are still in progess.
+The plugin is still under development, so a lot of features are still in progress.
 
 ## Commands
 
