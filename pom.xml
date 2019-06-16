@@ -15,7 +15,7 @@
                 <artifactId>maven-shade-plugin</artifactId>
                 <version>3.2.1</version>
                 <configuration>
-                    <shadeCompileJar>true</shadeCompileJar>
+                    <!-- <shadeCompileJar>true</shadeCompileJar> -->
                 </configuration>
                 <executions>
                     <execution>
