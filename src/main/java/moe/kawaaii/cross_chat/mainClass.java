@@ -81,7 +81,7 @@ public class mainClass extends JavaPlugin implements Listener {
 
     @Override
     public void onDisable() {
-        discord_api = null;
+        discord_api.disconnect();
     }
 
 }
