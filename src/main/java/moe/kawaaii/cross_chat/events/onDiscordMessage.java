@@ -15,7 +15,6 @@ import static moe.kawaaii.cross_chat.mainClass.config;
 public class onDiscordMessage implements MessageCreateListener {
 
     private String formatPlaceholders(MessageAuthor user, String message) {
-
         String format = config.getString("config.message-formats.minecraft");
         if (format == null) format = "[Discord] &l{username}&r: {message}";
 
@@ -25,18 +24,15 @@ public class onDiscordMessage implements MessageCreateListener {
         values.put("message", message);
 
         StrSubstitutor sub = new StrSubstitutor(values, "{", "}");
-
         return sub.replace(ChatColor.translateAlternateColorCodes('&', format));
     }
 
     @Override
     public void onMessageCreate(MessageCreateEvent e) {
-
         if (!e.getChannel().getIdAsString().equals(config.getString("config.discord.channels.discord-to-minecraft"))) return;
         if (e.getMessage().getAuthor().isBotUser()) return;
 
         String content = formatPlaceholders(e.getMessage().getAuthor(), e.getMessage().getReadableContent());
         Bukkit.getServer().broadcastMessage(content);
-
     }
 }

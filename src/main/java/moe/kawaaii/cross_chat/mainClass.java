@@ -5,7 +5,6 @@ import moe.kawaaii.cross_chat.events.onMinecraftMessage;
 import org.bstats.bukkit.Metrics;
 import org.bukkit.Bukkit;
 import org.bukkit.event.Listener;
-import org.bukkit.plugin.Plugin;
 import org.bukkit.configuration.InvalidConfigurationException;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
@@ -82,7 +81,7 @@ public class mainClass extends JavaPlugin implements Listener {
 
     @Override
     public void onDisable() {
-
+        discord_api = null;
     }
 
 }
