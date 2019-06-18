@@ -15,6 +15,21 @@ config:
       discord-to-minecraft: ""
       minecraft-to-discord: ""
 
+    # Required_Role is a setting  that can be used if you only want people with a specific role within Discord
+    # to be able to use the plugin, this setting is not required, but if you use it, make sure you enter the role ID correct.
+    # This is a work-in-progress function and it requires you to use a Discord Role ID.
+
+    # A Discord Role ID can be obtained by typing @ROLENAME and before you hit enter, you put a backslash infront of it.
+    # So the input field will look like this "\@ROLENAME", if you did that, you only have to hit enter.
+    # If all went correct, you should have a message with something similar to "<@&5874948636554918112>".
+    # Now to get the ID of the role, simply just copy only the numbers in this case: "5874948636554918112".
+    # And all you have to do now is paste in within the quotation marks behind 'required_role:'.
+    # So you get something like this: required_role: "5874948636554918112" .
+
+    # To simply disable this feature again, just remove the ID and leave the quotation marks left empty.
+    required_role: ""
+    inherit_role_color: true # You really need explanation on this one? Damn.. xD
+
   # Message Formats can be blank, then it will use the default formats
   # If you wanna change the format, make sure to un-comment the two lines below and make sure
   # To read all this before continuing.
