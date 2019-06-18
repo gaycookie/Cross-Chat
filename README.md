@@ -36,7 +36,6 @@ As for this, this will come as soon as possible!
 - [JavaCord : 3.0.4](https://javacord.org/)
 - [PlaceholderAPI : 2.10.2](https://github.com/PlaceholderAPI/PlaceholderAPI)
 - [bStats : 1.5](https://bstats.org/)
-- [Apache Commons : 3.4](https://commons.apache.org/)
 
 ### Tools:
 
