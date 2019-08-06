@@ -1,6 +1,6 @@
 # Cross Chat 🦜
 
-[![Jenkins](https://img.shields.io/jenkins/build/https/ci.kawaaii.moe/job/Cross-Chat.svg)](https://ci.kawaaii.moe/job/Cross-Chat/lastSuccessfulBuild/)
+[![Jenkins](https://img.shields.io/jenkins/build/https/ci.kawaaii.moe/job/Cross-Chat.svg)](https://ci.kawaaii.moe/job/Cross-Chat/)
 [![Discord](https://img.shields.io/discord/565554961791057942.svg?label=Support%20Discord)](https://)
 [![crosschat-1.0-snapshot](https://img.shields.io/badge/CrossChat-1.0--SNAPSHOT-yellow.svg)](https://github.com/kawaaii/Cross-Chat/)
 [![minecraft-1.14.2-ready](https://img.shields.io/badge/Minecraft-1.14%20ready-brightgreen.svg)](https://www.minecraft.net)
